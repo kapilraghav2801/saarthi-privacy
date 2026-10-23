@@ -1,41 +1,93 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Saarthi Chrome extension privacy policy"><title>Saarthi | Privacy Policy</title><style>body{margin:0;background:#f7f8fa;color:#202534;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}.wrap{max-width:780px;margin:48px auto;padding:40px;background:white;border:1px solid #e5e8ef;border-radius:18px}h1{font-size:2rem;line-height:1.2}h2{margin-top:2rem;font-size:1.22rem}p,li{font-size:1rem}code{background:#f0f2f6;padding:2px 5px;border-radius:4px}strong{font-weight:650}@media(max-width:850px){.wrap{margin:0;padding:22px;border:0;border-radius:0}}</style></head><body><main class="wrap"><h1>Saarthi — Privacy Policy</h1>
-<p><strong>Effective date:</strong> October 15, 2026<br />
-<strong>Developer:</strong> Saarthi<br />
-<strong>Contact:</strong> [ADD YOUR PUBLIC SUPPORT EMAIL BEFORE PUBLISHING]</p>
-<p>Saarthi is a Hindi-, Hinglish-, and English-friendly Chrome browser assistant. It provides a floating assistant and Chrome side panel for user-requested browser tasks, including tab management, YouTube search/playback, and supported Instagram Reel downloads.</p>
-<p>This policy explains how Saarthi handles information when you use the browser extension. It applies to the extension and its related command-processing service.</p>
-<h2>1. Information involved in providing Saarthi</h2>
-<p><strong>Commands and speech transcripts.</strong> When you submit a typed command or use voice input, the resulting text may be sent to Saarthi's command-processing backend to interpret your request and return an action. Saarthi uses the browser's speech-recognition functionality for voice commands; speech processing may also involve the browser or speech-service provider according to its own policies. Do not include sensitive information in commands.</p>
-<p><strong>Browser tabs and webpage content.</strong> Saarthi can access the current tab and parts of supported webpages when necessary to show the floating assistant or perform a command you request. This may include webpage URLs, video links, titles or other content needed for a requested action. Access to a webpage does not mean every webpage is transmitted to Saarthi's backend.</p>
-<p><strong>Download information.</strong> When you request a supported Instagram Reel download, Saarthi processes the media link and asks Chrome to save the file to your device. The downloaded media is stored according to your Chrome download settings.</p>
-<p><strong>Local extension settings.</strong> Saarthi uses Chrome extension storage to keep settings such as the position of the floating assistant and information needed for an authenticated session. This may include an access token. Chrome-managed local storage is distinct from data transmitted to the command-processing backend.</p>
-<p><strong>Operational information.</strong> The backend or infrastructure provider may process technical request metadata, such as IP addresses, timestamps and diagnostic information, to provide and secure the service. The exact information logged and its retention period must be confirmed before publication.</p>
-<h2>2. How information is used</h2>
-<p>Saarthi processes information only to operate its browser assistant and related functions, interpret and execute your commands, maintain authentication, protect the service, and diagnose operational problems. It does not use information from the extension to determine creditworthiness or for lending decisions.</p>
-<h2>3. Service providers and data sharing</h2>
-<p>Saarthi may rely on a backend hosting provider and on browser-operated speech recognition to provide its functions. Content or identifiers required to carry out an action may be handled by the website or browser service involved (for example, YouTube, Instagram or Chrome Downloads). Please review the privacy policies of those services as appropriate.</p>
-<p><strong>Before publication, identify the actual hosting, speech, AI-model, analytics and logging providers used in your release here, and describe which data each receives.</strong> Do not publish this draft without completing that review.</p>
-<p>Saarthi does not intend to sell user data or transfer it for targeted advertising. This statement must be verified against all production integrations before publication.</p>
-<h2>4. Permissions and site access</h2>
-<p>Saarthi requests browser permissions to provide its features:</p>
-<ul>
-<li><strong><code>tabs</code>:</strong> Find and manage browser tabs in response to commands.</li>
-<li><strong><code>storage</code>:</strong> Store extension preferences and authentication-related state.</li>
-<li><strong><code>sidePanel</code>:</strong> Display the assistant in Chrome's side panel.</li>
-<li><strong><code>downloads</code>:</strong> Save supported media at your request.</li>
-<li><strong>Website access (<code>&lt;all_urls&gt;</code>):</strong> Display the floating assistant on supported pages and perform relevant webpage actions. Site access is broad; Saarthi should minimize the content it accesses and avoid unrelated collection.</li>
-</ul>
-<h2>5. Storage, retention and security</h2>
-<p>Extension preferences and session data may be stored in Chrome's extension storage. Commands sent to the backend travel over the connection configured by the extension. The published release must use encrypted HTTPS connections for remote services, and secrets must not be placed in public repositories.</p>
-<p><strong>Before publication, state the actual server-side command/log retention periods, access controls, deletion process and whether any voice/audio recordings are retained.</strong> These practices must reflect the deployed release rather than assumptions.</p>
-<h2>6. Your choices and deletion requests</h2>
-<p>You can stop using Saarthi at any time, withhold microphone access, or uninstall the extension. Uninstalling removes extension-managed local data according to Chrome's behavior but does <strong>not</strong> necessarily delete any data already stored by a backend service. To request access to or deletion of server-held personal data, contact the developer using the support address above. The developer will respond subject to applicable law and technical limitations.</p>
-<h2>7. Children and sensitive information</h2>
-<p>Saarthi is a general browser productivity tool and is not designed for children. Avoid submitting passwords, financial information, health details or other sensitive information in commands or on pages where the assistant is active.</p>
-<h2>8. Changes to this policy</h2>
-<p>We may update this policy as Saarthi's features and data practices change. Material changes will be reflected by updating the effective date and providing additional notices where required.</p>
-<h2>9. Chrome Web Store Limited Use</h2>
-<p>Use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements. Data accessed through extension permissions will be used only for Saarthi's disclosed user-facing functionality and permitted related operational purposes.</p>
-<h2>10. Contact</h2>
-<p>For privacy inquiries, contact <strong>[ADD YOUR PUBLIC SUPPORT EMAIL BEFORE PUBLISHING]</strong>.</p>
-</main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Saarthi Chrome extension">
+  <title>Saarthi Chrome Extension — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #f7f8fa; color: #202534; font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { max-width: 820px; margin: 36px auto; padding: 36px; background: #fff; border: 1px solid #e5e8ef; border-radius: 16px; }
+    h1 { font-size: 2rem; line-height: 1.25; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    h3 { margin-top: 1.3rem; font-size: 1.05rem; }
+    a { color: #165b9c; }
+    a:focus-visible { outline: 3px solid #165b9c; outline-offset: 3px; }
+    li { margin: .35rem 0; }
+    .meta { color: #454b59; }
+    @media (max-width: 850px) { main { margin: 0; padding: 22px; border: 0; border-radius: 0; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Saarthi Chrome Extension — Privacy Policy</h1>
+  <p class="meta"><strong>Last updated:</strong> 23 October 2026<br>
+    <strong>Applies to:</strong> Saarthi Chrome extension version 2.0.9 and its related authentication and command services.</p>
+  <p>Saarthi provides a browser assistant, a Chrome side panel, local browser tools, Google sign-in, and an invite-code path for authorized owner and tester accounts. Google sign-in supports local tools and displays account identity; backend account-status endpoints are not yet available. AI commands for Google accounts are unavailable while backend authorization and quotas are being completed. Owner-only connected-home features are separate.</p>
+
+  <h2>1. Information Saarthi handles</h2>
+  <h3>Google and Supabase sign-in</h3>
+  <p>When you choose Continue with Google, Chrome opens a Google sign-in flow managed through Supabase Auth. Supabase provides Saarthi with a user ID, email address, and available profile name. The extension displays your name or email in the side panel and uses the user ID to check account status. The extension temporarily holds a sign-in verifier and then a Supabase access token, refresh token, account details, and expiry information in Chrome extension session storage. It sends the access token to the Saarthi API on Railway when requesting account status; the currently deployed backend does not yet provide the account-status endpoints. The refresh token is sent to Supabase Auth to renew a session; it is not sent to Saarthi's AI endpoint.</p>
+  <p>Google and Supabase process information needed to authenticate you under their own services. Signing out of Saarthi clears its local Google session and requests a local-scope logout from Supabase. Signing out does not itself delete your Google or Supabase account, and an already issued access token may remain valid until it expires.</p>
+
+  <h3>Legacy invite-code sign-in</h3>
+  <p>Authorized owner and tester accounts may enter a private Saarthi access code. The extension sends that code over HTTPS to Saarthi's Railway-hosted API to validate the account and stores the code and returned owner/tester identity in Chrome extension session storage while signed in. That code is also sent as a bearer credential with authorized legacy AI requests. Invite codes are not converted into Google or Supabase sessions.</p>
+
+  <h3>Commands, speech, tabs, and webpages</h3>
+  <p>When an authorized owner or tester submits a typed or spoken AI command, the resulting text is sent to Saarthi's Railway-hosted API. The backend sends command text to TypeSafe to interpret the requested action and returns a result or browser command. A command may itself include a website address, video title, device name, or other details you provide. Google accounts do not currently get this billable AI command path.</p>
+  <p>Backend deployment logs may record the original command text, extracted queries, action and target confidence values, and HTTP request metadata. Spoken commands can therefore appear in logs as text transcripts. Commands and queries may contain personal information you include in them.</p>
+  <p>Voice input uses the browser's SpeechRecognition feature. The browser or its speech-service provider may process audio to produce a transcript; Saarthi receives and handles the resulting text. The extension does not save microphone audio as a recording. The browser or speech provider handles its own processing and retention.</p>
+  <p>Saarthi content scripts run on ordinary webpages to show the assistant and carry out requested page or media actions. Depending on the action, they can inspect the current page, tab URL and title, media controls, or supported Instagram Reel media information. Access to a page does not mean its entire contents are sent to Saarthi's backend. A command you submit can disclose content you include in it.</p>
+
+  <h3>Local utilities and downloads</h3>
+  <p>Calculator and Images to PDF process your input in Chrome; selected images are converted into a PDF in the extension, and Chrome saves the result to your chosen download location. Focus, clock, timers, alarms, site dark mode, and music-tab controls operate in the browser without calling Saarthi's AI backend. The speed test contacts Cloudflare's speed-test service and transfers test data to measure the connection. Local tool settings, timer state, site-theme choices, and display preferences can be stored on this browser.</p>
+  <p>When you request a supported Instagram Reel download, the extension obtains media information from the Instagram page in your browser and asks Chrome to download the media from its source. It does not copy your Instagram cookies to Saarthi's backend. Chrome and the media source handle the download request. Saarthi keeps temporary download status in extension session storage; the downloaded file remains wherever Chrome saves it until you remove it.</p>
+
+  <h3>Connected-home features</h3>
+  <p>Connected-home setup is currently available only to a legacy owner account, not to a Google account or legacy tester. If the owner connects SmartThings or Atomberg, the extension stores the supplied provider connection information in an encrypted vault on that browser. It temporarily uses connection information during a signed-in owner session to make authorized requests to the selected provider. Device names, status, and control requests are exchanged with that provider. A recent device-activity summary may also be stored locally for display. Disconnecting a provider removes its saved connection from the vault; signing out clears the active session but does not by itself erase the saved vault. Some owner commands that are not completed locally may use the legacy AI service described above. If server-side SmartThings control is enabled, Railway also sends authorized owner device requests to SmartThings.</p>
+
+  <h2>2. Service providers and recipients</h2>
+  <ul>
+    <li><strong>Google and Supabase:</strong> Google sign-in and Supabase Auth account/session information, including account identifiers and authentication tokens needed for sign-in and refresh.</li>
+    <li><strong>Railway:</strong> hosts the Saarthi API and its deployment logs, which may contain command text, extracted queries, confidence values, and HTTP request metadata. It receives legacy invite-code validation requests and authorized command text; the extension also sends Google-account status requests bearing Supabase access tokens, although those endpoints are not yet available on the deployed backend. Requests also expose ordinary connection metadata, such as IP address and time, to hosting infrastructure.</li>
+    <li><strong>TypeSafe:</strong> receives authorized legacy AI command text from the Saarthi backend to interpret the requested action. Google-user AI commands are currently disabled.</li>
+    <li><strong>Cloudflare:</strong> receives speed-test requests and random test upload data when you run Speed Test.</li>
+    <li><strong>SmartThings or Atomberg:</strong> if the legacy owner connects a provider, it receives the information required for device discovery, status, and requested control.</li>
+    <li><strong>Browser and requested websites:</strong> Chrome handles extension storage, speech recognition, tabs, notifications, and downloads. Requested actions can contact sites such as YouTube or Instagram. Browser speech processing may involve the browser's speech-service provider.</li>
+    <li><strong>GitHub Pages:</strong> hosts this policy page and receives ordinary website requests when you visit it.</li>
+  </ul>
+  <p>Saarthi uses the information described here to provide requested functions, maintain authentication, secure the service, and operate it. Provider-side processing and retention follow the applicable service settings and provider policies.</p>
+
+  <h2>3. Chrome permissions and website access</h2>
+  <ul>
+    <li><strong>storage:</strong> session credentials and sign-in state; local preferences, timers, display state, and the encrypted owner home connection.</li>
+    <li><strong>identity:</strong> opens Google/Supabase sign-in and derives the Chrome OAuth callback.</li>
+    <li><strong>sidePanel:</strong> displays Saarthi beside the webpage.</li>
+    <li><strong>tabs:</strong> finds and controls tabs and playable media for user-requested browser actions.</li>
+    <li><strong>downloads:</strong> saves requested supported media. The Images to PDF tool also starts a Chrome download of the PDF it creates locally.</li>
+    <li><strong>alarms and notifications:</strong> schedules focus, timer, or alarm events and shows completion notices.</li>
+    <li><strong>Website access on ordinary pages:</strong> content scripts can run across websites to show the assistant, toggle site dark mode, and perform requested page actions. An Instagram-specific content script runs on Instagram pages for supported downloads. Chrome-protected pages may not support these functions.</li>
+    <li><strong>Network hosts:</strong> the manifest permits the Saarthi API on Railway, Cloudflare Speed Test, and the SmartThings and Atomberg APIs. Supabase host access is requested when you initiate Google sign-in.</li>
+  </ul>
+
+  <h2>4. Storage, retention, and deletion</h2>
+  <p><strong>On your browser:</strong> Supabase tokens, the temporary sign-in verifier, and legacy invite-code session information are kept in Chrome extension session storage. The sign-in verifier is removed after the sign-in attempt. Saarthi logout removes its local session; a failed refresh removes the Google session. Chrome also clears extension session storage when the browser restarts or the extension is reloaded, disabled, or updated. Local preferences, alarm and timer state, recent device-activity display data, and the encrypted connected-home vault can remain in Chrome extension local storage until changed, disconnected where applicable, or cleared with extension data. Uninstalling the extension clears its extension storage, but downloaded files remain in Chrome's download location.</p>
+  <p><strong>On Saarthi and provider services:</strong> The Saarthi backend can keep temporary request counts and command context during operation. Supabase Auth maintains a Google-linked account record after you sign out. Railway infrastructure, Supabase, TypeSafe, the browser's speech service, and connected-home providers may retain operational logs, authentication information, or command-related data according to their applicable service settings and policies. Saarthi does not set a single retention period for records held by all of these services. Local logout or uninstall does not delete records already held by them. Saarthi currently does not offer in-extension account deletion.</p>
+  <p>To request access to or deletion of personal information associated with your Saarthi account, email <a href="mailto:saarthi.explore@gmail.com">saarthi.explore@gmail.com</a>. We will review your request, take reasonable steps to verify account ownership, and determine what information can be deleted from systems under our control. We will process applicable deletion requests in accordance with legal requirements. Certain records may need to be retained for security, legal, or operational reasons, and information held in service-provider logs or backups may be subject to separate retention periods. Never send passwords, one-time passcodes, invite codes, access tokens, or Google credentials to verify your identity.</p>
+
+  <h2>5. Security and your choices</h2>
+  <p>Extension requests to Supabase, Saarthi's API, Cloudflare, and connected-home providers use HTTPS. The owner home connection is encrypted before it is saved in the browser's local extension storage. Session credentials are not placed in Chrome sync storage. You can use the local tools without signing in, stop using voice input, log out, disconnect a home provider if you are the owner, clear extension data, or uninstall Saarthi. Avoid entering passwords or other sensitive information in AI commands or on pages where you do not want an assistant to operate.</p>
+  <p>Saarthi is a general browser productivity tool and is not designed for children.</p>
+
+  <h2>6. Changes to this policy</h2>
+  <p>We will update the date above when the policy changes. A future release that enables Google-user AI requests or changes account, provider, or retention practices requires an updated disclosure before that feature is made available.</p>
+
+  <h2>7. Chrome Web Store Limited Use</h2>
+  <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements. Data accessed through Chrome extension permissions will be used only to provide Saarthi's disclosed user-facing functions and related permitted operational purposes.</p>
+
+  <h2>8. Contact</h2>
+  <p>For privacy questions and account-data requests, email <a href="mailto:saarthi.explore@gmail.com">saarthi.explore@gmail.com</a>.</p>
+</main>
+</body>
+</html>
